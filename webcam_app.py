@@ -49,6 +49,8 @@ class Detector:
         import cv2
 
         self.confidence, self.size = confidence, size
+        if not hasattr(cv2, "CascadeClassifier"):
+            raise RuntimeError("La version de OpenCV no incluye CascadeClassifier. Ejecuta INICIAR.bat para repararla.")
         self.face_detector = cv2.CascadeClassifier(
             cv2.data.haarcascades + "haarcascade_frontalface_default.xml"
         )

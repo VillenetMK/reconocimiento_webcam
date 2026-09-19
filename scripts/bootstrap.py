@@ -36,7 +36,7 @@ def prepare():
     ready = stamp.is_file() and stamp.read_text(encoding="ascii").strip() == digest
     if ready:
         health = subprocess.run(
-            [str(python), "-c", "import cv2, numpy, torch, ultralytics"],
+            [str(python), "-c", "import cv2, numpy, torch, ultralytics; assert hasattr(cv2, 'CascadeClassifier')"],
             cwd=ROOT, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL
         )
         ready = health.returncode == 0
