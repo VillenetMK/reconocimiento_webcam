@@ -1,0 +1,6 @@
+{
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv_vision",
+  "python.terminal.activateEnvironment": false,
+  "python.analysis.extraPaths": ["${workspaceFolder}"],
+  "cSpell.language": "en,es"
+}
