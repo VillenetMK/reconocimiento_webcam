@@ -1,4 +1,22 @@
 # Reconocimiento por webcam
+### Visión artificial aplicada a la enseñanza
+
+Herramienta en Python para explorar detección de objetos y rostros con una webcam. Muestra etiquetas en español, utiliza alto contraste y distingue los resultados mediante formas.
+
+| En un vistazo | Detalle |
+|---|---|
+| Uso | Demostraciones y prácticas de visión artificial |
+| Tecnologías | Python, OpenCV y Ultralytics YOLO11n |
+| Objetos | Las 80 categorías del conjunto COCO |
+| Rostros | Detección frontal; sin identificación de personas por nombre |
+| Procesamiento | Local; la aplicación no guarda fotos ni video |
+| Ejecución | Iniciador para Windows y script para Linux/macOS; macOS pendiente de validación con hardware |
+
+**Explorar:** [iniciar en Windows](#iniciar-en-windows) · [opciones](#opciones) · [alcance](#alcance) · [código de los detectores](webcam_app.py)
+
+La primera instalación descarga dependencias y el modelo. La precisión y la fluidez dependen del equipo, la cámara y las condiciones de la escena.
+
+---
 
 Abre la cámara y muestra etiquetas en español para objetos como celulares,
 botellas, sillas y personas. Las caras aparecen como **ROSTRO**, dentro de una
